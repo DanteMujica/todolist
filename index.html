@@ -5,21 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
   <div class="title">
     <h1>MY TODO LIST</h1>
-    <input type="text" id="text-l">
-    <button id="enter">
-      追加
-    </button>
+    <input id="text" type="text" placeholder="やりたいことをここに書いてね">
+    <button type="submit" class="btn btn-submit">送信</button>
   </div>
-  <ul id="list">
-    <li id="tameshi">やりたいこと</li>
-    <li>やりたいこと</li>
-    <li>やりたいこと</li>
-    <li>やりたいこと</li>
-  </ul>
+  <div class="out-put">
+    <p class="output-item">やりたいこと:<span id="output-text"></span></p>
+  </div>
   <script src="JQuery.js"></script>
 </body>
 </html>

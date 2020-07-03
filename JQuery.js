@@ -1,3 +1,4 @@
-$('#enter').click(function() {
-  $('#tameshi').fadeOut();
+$('.btn').submit(function () {
+  let text = $('#text').val();
+  $('#output-text').text(text);
 });

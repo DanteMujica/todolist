@@ -29,10 +29,19 @@ button:active{
   top: 5px;
   box-shadow: none;
 }
-
-
-
-
+p:hover{
+  background-color: #585a56;
+  cursor: pointer;
+}
+.end{
+  text-decoration: line-through;
+  background-color: #585a56;
+  color: #fff;
+}
+.setsumei{
+  display: none;
+  color: white;
+}
 
 
 

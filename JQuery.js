@@ -6,13 +6,18 @@ $('h1').hover(
     $('.setsumei').fadeOut();
   }
 );
-const $list = $('#list');
+$('#text').click(function () {
+  $('.list').addClass('output-item');
+});
 
-$('.btn').click(function () {
+$('#enter').click(function () {
   let text = $('#text').val();
   $('.output-item').text(text);
-  $list.clone().appendTo('#list');
+  let dom = '<p class="list">やりたいこと：</p>'
+  $('.out-put').append(dom);
+  $('div p').removeClass('output-item');
 });
-$('.output-item').click(function () {
-  $(this).addClass('end');
+
+$('.list').click(function () {
+  $(this).addClass('end')
 });

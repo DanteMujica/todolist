@@ -6,18 +6,9 @@ $('h1').hover(
     $('.setsumei').fadeOut();
   }
 );
-$('#text').click(function () {
-  $('.list').addClass('output-item');
-});
-
 $('#enter').click(function () {
-  let text = $('#text').val();
-  $('.output-item').text(text);
-  let dom = '<p class="list">やりたいこと：</p>'
-  $('.out-put').append(dom);
-  $('div p').removeClass('output-item');
+  let dom = $('#text').val();
+  $('.list').append(dom).css('display', 'block');
 });
 
-$('.list').click(function () {
-  $(this).addClass('end')
-});
+

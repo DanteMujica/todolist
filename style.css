@@ -42,7 +42,13 @@ p:hover{
   display: none;
   color: white;
 }
-
+.list{
+  display: none;
+  width: 100%;
+  padding: 15px;
+  border-style: solid;
+  border-color: #f36262;
+}
 
 
 

@@ -8,7 +8,8 @@ $('h1').hover(
 );
 $('#enter').click(function () {
   let dom = $('#text').val();
-  $('.list').append(dom).css('display', 'block');
+  $('.out-put').append(dom)
+  $('.out-put li').css('display', 'block');
 });
 
 

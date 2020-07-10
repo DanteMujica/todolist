@@ -42,7 +42,7 @@ p:hover{
   display: none;
   color: white;
 }
-.list{
+.out-put li{
   display: none;
   width: 100%;
   padding: 15px;

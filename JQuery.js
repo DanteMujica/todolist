@@ -7,9 +7,19 @@ $('h1').hover(
   }
 );
 $('#enter').click(function () {
-  let dom = $('#text').val();
-  $('.out-put').append(dom)
-  $('.out-put li').css('display', 'block');
+  let text = $('#text').val();
+  let dom = "<li class=outputlist>" + text + "<span id=remove>✖</span>" + "</li>"
+  $('.out-put').append(dom);
 });
 
+$('ul').click(function () {
+  $('li').click(function () {
+    $(this).toggleClass('end');
+  });
+});
+$('#remove').click(function () {
+  $('li').remove();
+});
 
+localStorage.list = ul
+localStorage.getItem('ul')

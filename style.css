@@ -3,7 +3,7 @@
 }
 .head {
   padding: 100px;
-  background-color: orangered;
+  background-color: hsl(2, 94%, 57%);
 }
 h1 {
   color: white;
@@ -56,21 +56,19 @@ ul li:hover {
 li:nth-child(odd){
   background-color: hsl(0, 1%, 57%);
 }
-#remove {
+.close{
   position: absolute;
-  right: 20px;
+  right: 0;
+  padding: 5px 10px 5px 10px;
+  margin-right: 20px;
 }
 ul{
   padding-left: 0px;
 }
 span:hover{
   background-color: darkorange;
-  
 }
-span{
-  size: 50px;
-  padding: 10px 10px 10px 10px;
-}
+
 
 
 

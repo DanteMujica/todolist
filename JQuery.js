@@ -1,25 +1,19 @@
-$('h1').hover(
+$("h1").hover(
   function () {
-    $('.setsumei').fadeIn();
+    $(".setsumei").fadeIn();
   },
   function () {
-    $('.setsumei').fadeOut();
+    $(".setsumei").fadeOut();
   }
 );
-$('#enter').click(function () {
-  let text = $('#text').val();
-  let dom = "<li class=outputlist>" + text + "<span id=remove>✖</span>" + "</li>"
-  $('.out-put').append(dom);
+$("#enter").click(function () {
+  let text = $("#text").val();
+  let dom = "<li class=outputlist>" + text + "<span class=close>✖</span>" + "</li>";
+  $(".out-put").append(dom);
 });
-
-$('ul').click(function () {
-  $('li').click(function () {
-    $(this).toggleClass('end');
-  });
+$("body").on('click', 'li' , function () {
+  $(this).toggleClass("end");
 });
-$('#remove').click(function () {
-  $('li').remove();
+$('body').on('click', 'span', function () {
+  $(this).closest('li').remove();
 });
-
-localStorage.list = ul
-localStorage.getItem('ul')

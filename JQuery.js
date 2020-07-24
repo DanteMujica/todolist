@@ -8,12 +8,17 @@ $("h1").hover(
 );
 $("#enter").click(function () {
   let text = $("#text").val();
-  let dom = "<li class=outputlist>" + text + "<span class=close>✖</span>" + "</li>";
+  let dom = '<li class="outputlist">' + text + '<span class="close">✖</span>' + "</li>";
   $(".out-put").append(dom);
 });
-$("body").on('click', 'li' , function () {
+$("body").on('click', '.outputlist' , function () {
   $(this).toggleClass("end");
 });
-$('body').on('click', 'span', function () {
+$('body').on('click', '.close', function () {
   $(this).closest('li').remove();
 });
+
+// 残TODO
+// * 入力フォームがリセットされるようにしたい
+// * ローカルストレージで保存
+
